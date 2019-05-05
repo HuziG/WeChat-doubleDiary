@@ -1,0 +1,4 @@
+/* pages/pair-invited/pair-invited.wxss */
+page{
+  background-color: #EFF3F5;
+}

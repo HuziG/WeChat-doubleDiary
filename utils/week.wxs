@@ -1,0 +1,5 @@
+var getWeek = function(value) {
+  return "星期" + "日一二三四五六".charAt(getDate(value).getDay());
+} 
+
+module.exports.getWeek = getWeek

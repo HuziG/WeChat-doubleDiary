@@ -1,0 +1,33 @@
+/* pages/pair-user/pair-user.wxss */
+page{
+  background-color: #EFF3F5;
+  font-size: 12pt;
+}
+
+swiper{
+  height: 98vh;
+}
+
+.con-wrapper{
+  padding: 20rpx;
+}
+.container{
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.is-null{
+  padding: 100rpx;
+}
+
+.date-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.esp-cmp-wrapper{
+  margin-top: 100rpx;
+}

@@ -1,0 +1,24 @@
+<!--components/pair-diary/index.wxml-->
+<view class="container">
+  <view class="avatar-nickname-place">
+    <view class="avatar-nickname">
+      <view class="avatar">
+        <image src="{{avatar}}"/>
+      </view>
+      <view class="nickname">
+        {{nickname}}
+      </view>
+    </view>
+    <view class="place">
+      {{item.place}}
+    </view>
+  </view>
+
+  <view class="content" style="height: {{contentHeight}}px;">
+    {{item.content}}
+  </view>
+
+  <view class="time">
+    {{item.time}}
+  </view>
+</view>

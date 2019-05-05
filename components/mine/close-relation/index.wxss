@@ -1,0 +1,45 @@
+/* components/mine/close-relation/index.wxss */
+@import '../../../utils/iconfont.wxss';
+
+.close-relation-wrapper{
+  background-color: #FF0000 !important;
+}
+.close-relation-wrapper .iconfont{
+  color: #fff !important;
+}
+.close-relation-wrapper .title{
+  color: #fff !important;
+}
+page{
+  background-color: #EFF3F5;
+}
+.container{
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.icon-right{
+  font-size: 13pt !important;
+  margin-right: 0 !important;
+}
+button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 11pt;
+}
+button::after{
+  border:none;
+}
+
+.iconfont{
+  font-size: 50rpx;
+  line-height: 50rpx;
+  margin-right: 15rpx;
+}

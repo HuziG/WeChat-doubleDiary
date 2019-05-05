@@ -1,0 +1,13 @@
+<!--components/pair-invite/index.wxml-->
+<view class="container">
+  <view class="iconfont icon-ziyuan"></view>
+  <view class="title">还没有另一半和您一起写话哦</view>
+  <view class="des">立即邀请吧，一起写话更有意思</view>
+  <view class="line"></view>
+  <view class="btn-wrapper">
+    <van-button round type="primary" custom-class="btn" open-type="share">立即邀请</van-button>
+  </view>
+  <view class="line"></view>
+  <view class="refresh-des">如果您已邀请，可以尝试刷新</view>  
+  <view class="refresh" bind:tap="inviteWriteBtn">立即刷新</view>
+</view>

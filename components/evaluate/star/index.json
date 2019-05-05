@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-rate": "/static/vant-weapp/dist/rate/index"
+  }
+}

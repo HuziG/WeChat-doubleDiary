@@ -1,0 +1,44 @@
+/* components/pair-invite/index.wxss */
+@import '../../utils/iconfont.wxss';
+
+.iconfont{
+  font-size: 26pt;
+  padding: 50rpx 0 30rpx 0;
+  color: #4B4B4B;
+}
+.container{
+  text-align: center;
+}
+.title{
+  font-size: 14pt;
+  color: #4B4B4B;
+  padding: 20rpx 0 15rpx 0;
+}
+.des{
+  font-size: 10pt;
+  color: #909497;
+  padding-bottom: 30rpx;
+}
+.line{
+  padding: 10rpx 0;
+  border-bottom: 1px dashed #E5E5E5;
+}
+.btn-wrapper{
+  padding: 50rpx 0 30rpx 0;
+}
+.btn{
+  box-shadow: 0px 3px 5px #E5E5E5;
+}
+.refresh-des{
+  font-size: 11pt;
+  padding: 20rpx 0;
+  color: #4B4B4B;
+}
+.refresh{
+  padding: 10rpx 0 15rpx 0;
+  font-size: 10pt;
+  color: #07C160;
+}
+.refresh:active{
+  color: rgba(7, 193, 96, .5);
+}

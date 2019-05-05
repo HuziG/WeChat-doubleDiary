@@ -1,0 +1,18 @@
+<!--components/pair-invited/index.wxml-->
+<view class="con-wrapper">
+  <view class="container">
+    <view class="iconfont icon-chenggongkaixin"></view>
+    <view class="title">{{nickName}}</view>
+    <view class="des">邀请您一起写日记</view>
+    <view class="line"></view>
+    <view class="btn-wrapper">
+      <van-button round type="primary" custom-class="btn" open-type="getUserInfo" bind:getuserinfo="getUserInfo">好的，我愿意</van-button>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn">
+  <van-button size="small" round type="info" custom-class="b-btn" bind:click="welcomeTo">
+    进入小程序
+  </van-button>
+</view>

@@ -1,0 +1,7 @@
+<!--pages/evaluate/evaluate.wxml-->
+<evaluate-star-cmp id="evaluate-star-cmp" />
+<evaluate-text-cmp id="evaluate-text-cmp" />
+
+<view class="bottom-btn">
+  <van-button round type="primary" custom-class="btn" bind:click="submitBtn">提交</van-button>
+</view>

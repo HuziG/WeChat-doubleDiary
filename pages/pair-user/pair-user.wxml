@@ -1,0 +1,61 @@
+<!--pages/pair-user/pair-user.wxml-->
+<wxs src="../../utils/pair-user.wxs" module="showTool"></wxs>
+
+<view class="tabbar-top"></view>
+
+<swiper 
+  current="{{showTool.swiperCur(pairOpenid, diaryList, isWriteToday, swiperCur)}}" 
+  previous-margin="40rpx" 
+  next-margin="40rpx"
+  bindchange="swiperChange">
+
+  <block wx:if="{{showTool.diaryCmpShow(pairOpenid, diaryList)}}" 
+        wx:for="{{diaryList}}" 
+        wx:key="*this">
+
+    <swiper-item class="diary-wrapper">
+      <view class="con-wrapper">
+        <view class="container">
+          <date-diary-cmp dc-class="date-container" date="{{item.date}}"/>
+
+          <view wx:if="{{item[pairOpenid[0]]}}">
+            <pair-diary-cmp avatar="{{ pairUserInfo[0].avatarUrl }}" 
+                          nickname="{{ pairUserInfo[0].nickName }}" 
+                          item="{{ item[pairOpenid[0]] }}"
+                          data-item="{{ item[pairOpenid[0]] }}"
+                          data-date="{{ item.date }}"
+                          bind:tap="diaryDetailTo"/>
+          </view>
+
+          <view wx:if="{{item[pairOpenid[1]]}}">
+            <pair-diary-cmp avatar="{{ pairUserInfo[1].avatarUrl }}" 
+                          nickname="{{ pairUserInfo[1].nickName }}" 
+                          item="{{ item[pairOpenid[1]] }}"
+                          data-item="{{ item[pairOpenid[1]] }}"
+                          data-date="{{ item.date }}"
+                          bind:tap="diaryDetailTo"/>
+          </view>
+          
+        </view>
+      </view>
+    </swiper-item>
+
+  </block>
+
+  <swiper-item wx:if="{{showTool.addDiaryCmpShow(isWriteToday)}}" class="esp-cmp-wrapper">
+    <view class="con-wrapper">
+      <view class="container">
+        <add-diary-cmp />
+      </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item wx:if="{{showTool.inviteCmpShow(pairOpenid)}}" class="esp-cmp-wrapper">
+    <view class="con-wrapper">
+      <view class="container">
+        <pair-invite-cmp bind:inviteRefresh="initHandle"/>
+      </view>
+    </view>
+  </swiper-item>
+
+</swiper>

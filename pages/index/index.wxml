@@ -1,0 +1,13 @@
+<!--pages/index/index.wxml-->
+<view class="flex-container">
+  <text>
+    1000年前，人们飞鸽传书，联系感情 \n
+    156年前，人们开始使用电话，联系感情 \n
+    今天，你将使用一双日记，联系感情 \n
+  </text>
+
+  <image src="/static/img/index.png"></image>
+</view>
+<view class="bottom-btn">
+  <button size="default" open-type="getUserInfo" bind:getuserinfo="getUserInfo">点我使用</button>
+</view>

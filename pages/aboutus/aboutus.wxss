@@ -1,0 +1,23 @@
+/* pages/aboutus/aboutus.wxss */
+page{
+  padding: 18px;
+}
+.top .title{
+  font-size: 16pt;
+  font-weight: 700;
+  padding-top: 30rpx;
+}
+.top .des{
+  font-size: 13pt;
+  padding-top: 15rpx;
+  padding-bottom: 40rpx;
+}
+.middle .title{
+  font-size: 14pt;
+  font-weight: 700;
+  padding-top: 30rpx;
+}
+.middle .des{
+  font-size: 12pt;
+  padding: 15rpx 0;
+}

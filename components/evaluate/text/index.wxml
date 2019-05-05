@@ -1,0 +1,7 @@
+<!--components/evaluate/text/index.wxml-->
+<view class="con-wrapper">
+  <view class="container">
+    <view class="title">有什么想对我们说的话吗？</view>
+    <textarea placeholder="请输入留言内容..." value="{{value}}" bindinput="onChange"></textarea>
+  </view>
+</view>

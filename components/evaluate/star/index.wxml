@@ -1,0 +1,9 @@
+<!--components/evaluate/index.wxml-->
+<view class="con-wrapper">
+  <view class="container">
+    <view class="title">这款产品，您给几星？</view>
+    <view class="star-wrapper">
+      <van-rate value="{{ value }}" bind:change="onChange" size="26"/>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "date-diary-cmp": "/components/date-diary/index",
+    "van-button": "/static/vant-weapp/dist/button/index"
+  }
+}

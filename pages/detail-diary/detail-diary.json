@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#EFF3F5",
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "detail-diary-cmp": "/components/detail-diary/index"
+  }
+}

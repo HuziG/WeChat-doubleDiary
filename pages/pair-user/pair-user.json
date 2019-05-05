@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "一双日记",
+  "usingComponents": {
+    "add-diary-cmp": "/components/add-diary/index",
+    "date-diary-cmp": "/components/date-diary/index",
+    "pair-diary-cmp": "/components/pair-diary/index",
+    "pair-invite-cmp": "/components/pair-invite/index"
+  }
+}

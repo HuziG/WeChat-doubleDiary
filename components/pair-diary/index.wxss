@@ -1,0 +1,46 @@
+/* components/pair-diary/index.wxss */
+.avatar-nickname-place{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.avatar-nickname-place{
+  padding-bottom: 10rpx;
+}
+.avatar-nickname{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.avatar{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.avatar image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.nickname{
+  padding-left: 30rpx;
+  font-size: 13pt;
+}
+.place{
+  font-size: 9pt;
+  color: #717171;
+}
+.content{
+  font-size: 11pt;
+  letter-spacing: 3rpx;
+  /* min-height: 26.3vh; */
+  overflow: hidden;
+}
+.time{
+  font-size: 9pt;
+  color: #717171;
+  text-align: right;
+  padding: 5rpx 0;
+}

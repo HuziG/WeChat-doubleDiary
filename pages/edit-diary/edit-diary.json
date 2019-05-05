@@ -1,0 +1,7 @@
+{
+  "navigationBarBackgroundColor": "#EFF3F5",
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "edit-diary-cmp": "/components/edit-diary/index"
+  }
+}

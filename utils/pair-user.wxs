@@ -1,0 +1,46 @@
+var inviteCmpShow = function (pairOpenid) {
+  if (!pairOpenid) {
+    return true 
+  } else {
+    return false
+  }
+}
+
+var addDiaryCmpShow = function (isWriteToday) {
+  if (isWriteToday === undefined || isWriteToday) {
+    return false
+  } else {
+    return true
+  }
+}
+
+var diaryCmpShow = function (pairOpenid, diaryList) {
+  if (!pairOpenid && diaryList.length === 0) {
+    return false
+  } else {
+    return true
+  }
+}
+
+var swiperCur = function (pairOpenid, diaryList, isWriteToday, swiperCur) {
+  if (swiperCur != undefined) {
+    return swiperCur
+  }
+
+  if (!pairOpenid) {
+    return 0
+  }
+
+  if (!isWriteToday) {
+    return diaryList.length
+  } else {
+    return diaryList.length - 1
+  }
+}
+
+module.exports = {
+  inviteCmpShow: inviteCmpShow,
+  addDiaryCmpShow: addDiaryCmpShow,
+  diaryCmpShow: diaryCmpShow,
+  swiperCur: swiperCur
+}

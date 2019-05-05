@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/pair-user/pair-user",
+    "pages/detail-diary/detail-diary",
+    "pages/edit-diary/edit-diary",
+    "pages/pair-invited/pair-invited",
+    "pages/evaluate/evaluate",
+    "pages/aboutus/aboutus",
+    "pages/mine/mine"
+  ],
+  "tabBar": {
+    "position": "top",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#4B4B4B",
+    "list": [
+      {
+        "pagePath": "pages/pair-user/pair-user",
+        "text": "写日记"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#EFF3F5",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于日记展示"
+    }
+  },
+  "plugins": {
+    "sdkPlugin": {
+      "version": "1.16.0",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+/* pages/welcome/welcome.wxss */
+.welcome-container{
+  text-align: left;
+}
+.title{
+  font-size: 16pt;
+}
+.vice-title{
+  color: #ccc;
+  font-size: 11pt;
+}

@@ -1,0 +1,18 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view class="top">
+  <view class="title">
+    我们是谁?
+  </view>
+  <view class="des">
+    代码跳跃软件工作室
+  </view>
+</view>
+
+<view class="middle">
+  <view class="title">
+    联系我们?
+  </view>
+  <view class="des">
+    ceo-zdj@codesjump.com
+  </view>
+</view>

@@ -1,0 +1,7 @@
+<!--components/date/index.wxml-->
+<view class="dc-class">
+  <view class="date">{{date}}</view>
+  <view class="week">{{tools.getWeek(date)}}</view>
+</view>
+
+<wxs src="../../utils/week.wxs" module="tools" />

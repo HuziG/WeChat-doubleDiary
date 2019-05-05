@@ -1,0 +1,14 @@
+/* pages/evaluate/evaluate.wxss */
+page{
+  background-color: #EFF3F5;
+}
+.bottom-btn{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  line-height: 200rpx;
+  text-align: center;
+}
+.btn{
+  box-shadow: 0px 3px 5px #E5E5E5;
+}

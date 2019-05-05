@@ -1,0 +1,33 @@
+<!--components/detail-diary/index.wxml-->
+<view class="con-wrapper">
+  <view class="container content-container">
+    <view class="date">
+      <date-diary-cmp date="{{date}}"/>
+    </view>
+
+    <view class="time-place">
+      <text>{{time}}</text>
+      <text>{{place}}</text>
+    </view>
+
+    <view class="content">
+      {{content}}
+    </view>
+  </view>
+
+  <view style="height:80rpx;"></view>
+
+  <view class="bottom-btn">
+    <van-button size="small" round type="info" custom-class="b-btn" wx:if="{{!showJoin}}" bind:click="welcomeTo">
+      进入小程序
+    </van-button>
+    <van-button size="small" 
+      round type="primary" 
+      custom-class="b-btn" 
+      open-type="share">分享</van-button>
+  </view>
+</view>
+
+
+
+

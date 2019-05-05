@@ -1,0 +1,17 @@
+/* components/date/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container view{
+  line-height: 60rpx;
+}
+.date,.week{
+  text-shadow: 1px 1px 1px #C1C1C1;
+}
+.week{
+  font-size: 14pt;
+  font-weight: 700;
+}

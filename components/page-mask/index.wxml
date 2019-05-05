@@ -1,0 +1,4 @@
+<!--components/page-mask/index.wxml-->
+<view class="mask">
+  <view class="iconfont icon-yiguoqi"></view>
+</view>

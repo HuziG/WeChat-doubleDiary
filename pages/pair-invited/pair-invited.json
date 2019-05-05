@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#EFF3F5",
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "pair-invited-cmp": "/components/pair-invited/index",
+    "page-mask-cmp": "/components/page-mask/index"
+  }
+}
+

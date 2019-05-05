@@ -1,0 +1,60 @@
+/* pages/mine/mine.wxss */
+@import '../../utils/iconfont.wxss';
+
+.close-relation-wrapper{
+  background-color: #FF0000 !important;
+}
+.close-relation-wrapper .iconfont{
+  color: #fff !important;
+}
+.close-relation-wrapper .title{
+  color: #fff !important;
+}
+page{
+  background-color: #EFF3F5;
+}
+.con-wrapper{
+  padding: 20rpx;
+}
+.con-wrapper .container:nth-child(n-1){
+  margin-top: 50rpx;
+}
+.container{
+  padding: 0px;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+}
+.icon-right{
+  font-size: 13pt !important;
+  margin-right: 0 !important;
+}
+button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 11pt;
+}
+button::after{
+  border:none;
+}
+.footer{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 8pt;
+  color: #ccc;
+  bottom: 0;
+  line-height: 70rpx;
+}
+
+.iconfont{
+  font-size: 50rpx;
+  line-height: 50rpx;
+  margin-right: 15rpx;
+}

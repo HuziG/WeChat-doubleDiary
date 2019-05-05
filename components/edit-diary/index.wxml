@@ -1,0 +1,22 @@
+<!--components/edit-diary/index.wxml-->
+<view class="con-wrapper">
+  <view class="container">
+    <view class="date">
+      <date-diary-cmp date="{{date}}"/>
+      <van-button round 
+        type="primary" 
+        size="small" 
+        custom-class="submit-btn" 
+        bind:tap="submitBtn">提交</van-button>
+    </view>
+    <view class="line"></view>
+    <textarea placeholder="输入内容..." 
+        value="{{value}}" 
+        maxlength="-1" 
+        auto-focus="{{true}}" 
+        show-confirm-bar="{{false}}"
+        class="diaryInput"
+        bindinput="valueInput">
+    </textarea>
+  </view>
+</view>

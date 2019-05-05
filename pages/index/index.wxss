@@ -1,0 +1,38 @@
+/* pages/index/index.wxss */
+.flex-container{
+  font-size: 12pt;
+  line-height: 70rpx;
+  padding-top: 0rpx !important;
+}
+.flex-container image{
+  z-index: -1;
+  position: absolute;
+  bottom: 20rpx;
+  left: 0;
+  width: 99vw;
+  height: 83vh;
+}
+.container{
+  font-size: 12pt;
+  line-height: 75rpx;
+}
+
+.bottom-btn{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 20rpx;
+}
+.bottom-btn button{
+  width: 40%;
+  background-color: transparent;
+  font-weight: 700;
+  border: 1px solid #000;
+  animation: 2s fadeInOut infinite;
+} 
+
+@keyframes fadeInOut{
+  0%{opacity:0}
+  50%{opacity:.8;}
+  100%{opacity:0;}
+}

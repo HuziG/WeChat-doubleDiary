@@ -1,0 +1,2 @@
+<!--pages/edit-diary/edit-diary.wxml-->
+<edit-diary-cmp date="{{date}}"/>

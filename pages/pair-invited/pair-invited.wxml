@@ -1,0 +1,4 @@
+<!--pages/pair-invited/pair-invited.wxml-->
+<pair-invited-cmp nickName="{{nickName}}" openid="{{openid}}"/>
+
+<page-mask-cmp wx:if="{{!isOverDate}}"/>

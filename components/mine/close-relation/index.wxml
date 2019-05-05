@@ -1,0 +1,6 @@
+<!--components/mine/close-relation/index.wxml-->
+<view class="container close-relation-wrapper">
+  <button bind:tap="closeRelationTo">
+    <view class="title"><view class="iconfont icon-huaban1"></view>解除关系</view>
+  </button>
+</view>

@@ -1,0 +1,122 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.4",
+	"appid": "wx749a7f2efa73d2bf",
+	"projectname": "rebuild",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "welcome",
+					"pathName": "pages/welcome/welcome",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pairUser",
+					"pathName": "pages/pair-user/pair-user",
+					"query": "openid=oFio44w4lkW0lDyQXPty0q9IEUOY",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "detailDiary",
+					"pathName": "pages/detail-diary/detail-diary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pairInvited",
+					"pathName": "pages/pair-invited/pair-invited",
+					"query": "openid=oFio44w4lkW0lDyQXPty0q9IEUOY&date=2019-4-17",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "evaluate",
+					"pathName": "pages/evaluate/evaluate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "editDiary",
+					"pathName": "pages/edit-diary/edit-diary",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "closeRelation",
+					"pathName": "pages/close-relation/close-relation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "aboutUs",
+					"pathName": "pages/aboutus/aboutus",
+					"query": "openid=oFio44w4lkW0lDyQXPty0q9IEUOY&date=2019-4-17",
+					"scene": null
+				}
+			]
+		}
+	}
+}

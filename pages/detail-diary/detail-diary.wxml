@@ -1,0 +1,6 @@
+<!--pages/detail-diary/detail-diary.wxml-->
+<detail-diary-cmp date="{{date}}" 
+  time="{{time}}" 
+  place="{{place}}" 
+  content="{{content}}" 
+  openid="{{openid}}"/>

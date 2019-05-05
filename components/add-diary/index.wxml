@@ -1,0 +1,9 @@
+<!--components/add-diary/index.wxml-->
+<view class="container">
+  <view class="iconfont icon-jintian"></view>
+  <view class="title">今天您还没有写话哦</view>
+  <view class="line"></view>
+  <view class="btn-wrapper">
+    <van-button round type="primary" custom-class="btn" bind:tap="editDiaryTo">开始写话</van-button>
+  </view>
+</view>

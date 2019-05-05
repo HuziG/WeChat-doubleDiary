@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "一双日记",
+  "usingComponents": {
+    "close-relation-cmp": "/components/mine/close-relation/index"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "navigationBarBackgroundColor": "#EFF3F5",
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "evaluate-star-cmp": "/components/evaluate/star/index",
+    "evaluate-text-cmp": "/components/evaluate/text/index",
+    "van-button": "/static/vant-weapp/dist/button/index"
+  }
+}

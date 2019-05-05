@@ -1,0 +1,4 @@
+/* pages/edit-diary/edit-diary.wxss */
+page{
+  background-color: #EFF3F5;
+}

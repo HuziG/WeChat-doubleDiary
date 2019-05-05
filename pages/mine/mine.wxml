@@ -1,0 +1,51 @@
+<!--pages/mine/mine.wxml-->
+<view class="tabbar-top"></view>
+
+<view class="con-wrapper">
+
+  <view wx:if="{{pairOpenid}}">
+    <view class="container">
+      <close-relation-cmp />
+    </view>
+  </view>
+
+  <view class="container">
+    <button bind:tap="evaluateTo">
+      <view class="title"><view class="iconfont icon-huaban4"></view>评价</view>
+      <view class="iconfont icon-right"></view>
+    </button>
+  </view>
+
+  <view class="container">
+    <button open-type="feedback">
+      <view class="title"><view class="iconfont icon-huaban3"></view>问题反馈</view>
+      <view class="iconfont icon-right"></view>
+    </button>
+  </view>
+
+  <view class="container">
+    <button open-type="contact">
+      <view class="title"><view class="iconfont icon-huaban5"></view>联系客服</view>
+      <view class="iconfont icon-right"></view>
+    </button>
+  </view>
+
+  <view class="container">
+    <button open-type="openSetting">
+      <view class="title"><view class="iconfont icon-huaban2"></view>隐私设置</view>
+      <view class="iconfont icon-right"></view>
+    </button>
+  </view>
+
+  <view class="container">
+    <button bind:tap="aboutusTo">
+      <view class="title"><view class="iconfont icon-huaban"></view>关于我们</view>
+      <view class="iconfont icon-right"></view>
+    </button>
+  </view>
+</view>
+
+<view class="footer">@一对日记</view>
+
+
+

@@ -1,0 +1,21 @@
+/* components/evaluate/index.wxss */
+.con-wrapper{
+  padding: 20rpx;
+}
+.container{
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+
+.star-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50rpx 0 30rpx 0;
+}
+
+.title{
+  font-size: 11pt;
+  text-shadow: 1px 1px 1px #C1C1C1;
+}

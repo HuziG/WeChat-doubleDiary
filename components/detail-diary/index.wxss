@@ -1,0 +1,44 @@
+/* components/detail-diary/index.wxss */
+page{
+  background-color: #EFF3F5;
+  font-size: 12pt;
+}
+.con-wrapper{
+  padding: 20rpx;
+}
+.container{
+  padding: 10rpx 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.b-btn{
+  box-shadow: 0px 3px 5px #E5E5E5;
+}
+.date{
+  padding-bottom: 15rpx;
+  font-size: 14pt;
+  font-weight: 700;
+}
+.time-place{
+  display: flex;
+  justify-content: space-between;
+  font-size: 9pt;
+  padding-bottom: 10rpx;
+  color: #717171;
+  border-bottom: 1px dashed #ccc; 
+}
+.content{
+  padding-top: 10rpx;
+  font-size: 12pt;
+  letter-spacing: 1rpx;
+  min-height: 600rpx;
+}
+
+.bottom-btn{
+  position: fixed;
+  bottom: 20rpx;
+  display: flex;
+  width: 94%;
+  flex-direction: row;
+  justify-content: space-around;
+}
