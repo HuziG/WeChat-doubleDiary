@@ -93,3 +93,5 @@ LeanCloud：https://leancloud.cn/
 #### 1.0.5 pair-detail页日期bug修改
 #### 1.0.6 日记数组顺序bug修改
 #### 1.0.7 欢迎界面，授权界面修改
+#### 1.0.8 日记加载swiper顺序bug修改
+#### 1.0.9 日记编辑完成，返回加载BUG，解除关系BUG修改
