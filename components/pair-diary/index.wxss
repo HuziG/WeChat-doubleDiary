@@ -26,7 +26,7 @@
 }
 .nickname{
   padding-left: 30rpx;
-  font-size: 13pt;
+  font-size: 11pt;
 }
 .place{
   font-size: 9pt;

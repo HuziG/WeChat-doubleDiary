@@ -25,6 +25,7 @@ class OtherFunRequest extends HTTP {
   }
 
   getLocation() {
+    this.loadPop()
     return new Promise((resolve, reject) => {
       var BMap = new bmap.BMapWX({
         ak: 'GYz0wtbsoNZBq27ey0ylAxgfhABOngL2'
@@ -42,12 +43,14 @@ class OtherFunRequest extends HTTP {
   }
 
   getDayTagResult() {
+    this.loadPop()
     return new Promise((resolve, reject) => {
       this.getDayTag(wx.getStorageSync('openid')).then(res => {
         resolve(res.data === null || res.data != timeTool.getNowTime())
       })
     })
   }
+
 }
 
 export {

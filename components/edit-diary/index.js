@@ -11,9 +11,7 @@ const PairUserReq = new PairUserRequest()
 const OtherFunReq = new OtherFunRequest()
 
 Component({
-  /**
-   * 组件的属性列表
-   */
+  
   properties: {
     date: String,
     place: String,
@@ -23,16 +21,10 @@ Component({
     }
   },
 
-  /**
-   * 组件的初始数据
-   */
   data: {
 
   },
 
-  /**
-   * 组件的方法列表
-   */
   methods: {
     valueInput(event) {
       this.setData({
@@ -40,7 +32,9 @@ Component({
       })
     },
 
-    submitBtn() {
+    submitBtn(event) {
+      let place = ''
+
       if (this.data.value === '') {
         return
       }
@@ -49,14 +43,25 @@ Component({
         if (res) {
           return OtherFunReq.getLocation()
         }
-        wx.showToast({title: '今天已经提交咯~',icon: 'none',duration: 1500})
+        wx.showToast({
+          title: '今天已经提交咯~',
+          icon: 'none',
+          duration: 1500,
+          success() {
+            wx.hideLoading()
+          }
+        })
       }).then(res => {
-        return PairUserReq.orgPairDiary(res, this.data.value)
+        place = res
+        return PairUserReq.getIpAddress()
+      }).then(res => {
+        return PairUserReq.orgPairDiary(place, this.data.value, res)
       }).then(res => {
         return PairUserReq.addDiary({ value: res })
       }).then(res => {
         return OtherFunReq.rshDayTag(wx.getStorageSync('openid'))
       }).then(res => {
+        wx.hideLoading()
         this.backHandle()
       })
 

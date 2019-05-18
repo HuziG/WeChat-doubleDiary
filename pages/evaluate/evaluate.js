@@ -3,6 +3,7 @@ import {
   OtherFunRequest
 } from '../../models/otherfun.js'
 
+const Page = require('../../utils/ald-stat.js').Page;
 const OtherFunReq = new OtherFunRequest()
 
 Page({

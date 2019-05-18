@@ -7,6 +7,7 @@ Component({
     time: String,
     place: String,
     avatar: String,
+    nickname: String,
     item: Object,
     content: {
       type: String,

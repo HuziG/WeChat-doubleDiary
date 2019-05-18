@@ -1,11 +1,42 @@
 /* pages/welcome/welcome.wxss */
-.welcome-container{
-  text-align: left;
+page{
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.title{
-  font-size: 16pt;
+
+.container{
+  width: 300rpx;
+  text-align: right;
 }
-.vice-title{
-  color: #ccc;
-  font-size: 11pt;
+.line1{
+  width: 300rpx;
+  height: 15rpx;
+  background-color: #000;
+  margin-top: 40rpx;
+}
+.text1{
+  font-size: 20pt;
+}
+.text2{
+  font-size: 28pt;
+}
+.line2{
+  width: 15rpx;
+  position: absolute;
+  background-color: #000;
+  height: 98rpx;
+  line-height: 98rpx;
+}
+.text3{
+  font-size: 26pt;
+  color: #44C0DE;
+}
+.text4{
+  font-size: 32pt;
+}
+.text5{
+  font-size: 22pt;
 }

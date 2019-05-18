@@ -1,9 +1,10 @@
 <!--components/add-diary/index.wxml-->
 <view class="container">
   <view class="iconfont icon-jintian"></view>
-  <view class="title">今天您还没有写话哦</view>
+  <view class="title">今天您还没有写日记哦</view>
+  <view class="des">一天只能写一次，且行且珍惜</view>
   <view class="line"></view>
   <view class="btn-wrapper">
-    <van-button round type="primary" custom-class="btn" bind:tap="editDiaryTo">开始写话</van-button>
+    <van-button round type="primary" custom-class="btn" bind:tap="editDiaryTo">开始写日记</van-button>
   </view>
 </view>

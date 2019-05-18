@@ -4,6 +4,7 @@ import {
   SingleUserRequest
 } from '../../models/singleuser.js'
 
+const Page = require('../../utils/ald-stat.js').Page;
 const SingleUserReq = new SingleUserRequest()
 
 Page({

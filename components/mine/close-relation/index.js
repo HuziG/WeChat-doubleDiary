@@ -22,6 +22,20 @@ Component({
    */
   methods: {
     closeRelationTo() {
+      let that = this
+      
+      wx.showModal({
+        title: '确定解除?',
+        content: '解除后，你们的日记都将被清空！',
+        success(res) {
+          if (res.confirm) {
+            that.closeRelationHandle()
+          }
+        }
+      })
+    },
+
+    closeRelationHandle() {
       PairUserReq.deletePairUser().then(res => {
         return PairUserReq.deletePairDayTag()
       }).then(res => {

@@ -14,6 +14,12 @@
   color: #4B4B4B;
   padding: 20rpx 0 15rpx 0;
 }
+.des{
+  font-size: 9pt;
+  text-align: center;
+  padding: 10rpx 0;
+  color: #969696;
+}
 .line{
   padding: 10rpx 0;
   border-bottom: 1px dashed #E5E5E5;

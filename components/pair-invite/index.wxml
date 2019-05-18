@@ -1,8 +1,8 @@
 <!--components/pair-invite/index.wxml-->
 <view class="container">
   <view class="iconfont icon-ziyuan"></view>
-  <view class="title">还没有另一半和您一起写话哦</view>
-  <view class="des">立即邀请吧，一起写话更有意思</view>
+  <view class="title">还没有另一位和您一起写日记哦</view>
+  <view class="des">立即邀请吧，一起写日记更有意思</view>
   <view class="line"></view>
   <view class="btn-wrapper">
     <van-button round type="primary" custom-class="btn" open-type="share">立即邀请</van-button>

@@ -48,7 +48,6 @@ class PairUserRequest extends HTTP {
   }
 
   addDiary({ openid = wx.getStorageSync('openid'), value }) {
-    this.loadPop()
     return wx.BaaS.invokeFunction('pairdiary_addDiary', { openid, value }).then(res => {
       return this.request(res)
     })
@@ -58,46 +57,25 @@ class PairUserRequest extends HTTP {
     this.loadBarTitlePop()
 
     return wx.BaaS.invokeFunction('pairdiary_getDiary', { openid, page, pageSize }).then(res => {
-      let _res = this.diaryHandle(res)
-          _res.data.data = this.filterDiary(_res.data.data)
-
-      return this.request(_res)
+      return this.request(res)
     })
   }
 
-  diaryHandle(res) {
-    let _res = []
-    res.data.data.forEach(res => {
-      _res.push(JSON.parse(res))
+  getIpAddress() {
+    return new Promise((resolve, reject) => {
+      resolve('')
     })
-    res.data.data = _res
-    return res
-  } 
-
-  filterDiary(value) {
-    let arr = []
-    let dateArr = new Set(value.map(item => { return item.date }))
-    dateArr.forEach(i => {
-      let o = {}
-      o['date'] = i
-      value.forEach(j => {
-        if (i === j.date) {
-          o = Object.assign(o, j)
-        }
-      })
-      arr.push(o)
-    })
-    return arr
   }
 
-  orgPairDiary(place, content) {
+  orgPairDiary(place, content, ip = '') {
     return {
       date: timeTool.getNowTime(),
       [wx.getStorageSync('openid')]: {
         content,
         place,
         time: timeTool.getNowHour()
-      }
+      },
+      ip
     }
   }
 

@@ -5,7 +5,7 @@
       <view class="avatar">
         <image src="{{avatar}}"/>
       </view>
-      <view class="nickname">
+      <view class="nickname over-ellipsis">
         {{nickname}}
       </view>
     </view>

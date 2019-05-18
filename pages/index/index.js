@@ -3,20 +3,15 @@ import {
   SingleUserRequest
 } from '../../models/singleuser.js'
 
+const Page = require('../../utils/ald-stat.js').Page;
 const SingleUserReq = new SingleUserRequest()
 
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
 
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
   },

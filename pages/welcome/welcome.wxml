@@ -1,7 +1,13 @@
 <!--pages/welcome/welcome.wxml-->
-<view class="flex-container">
-  <view class="welcome-container">
-    <view class="title">你好!</view>
-    <view class="vice-title">ni hao!</view>
+<view class="container">
+  <view class="text1">写日记</view>
+  <view class="text3">很</view>
+  <view class="text4">
+    <view class="line2"></view>
+    无聊
   </view>
+  <view class="text5">
+    ？
+  </view>
+  <view class="line1"></view>
 </view>

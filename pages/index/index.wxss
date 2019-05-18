@@ -1,38 +1,74 @@
 /* pages/index/index.wxss */
-.flex-container{
-  font-size: 12pt;
-  line-height: 70rpx;
-  padding-top: 0rpx !important;
+page{
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.flex-container image{
-  z-index: -1;
-  position: absolute;
-  bottom: 20rpx;
-  left: 0;
-  width: 99vw;
-  height: 83vh;
-}
+
 .container{
-  font-size: 12pt;
-  line-height: 75rpx;
+  width: 300rpx;
+  text-align: right;
+}
+.line1{
+  width: 300rpx;
+  height: 15rpx;
+  background-color: #000;
+  margin-bottom: 40rpx;
+}
+.text1{
+  font-size: 20pt;
+}
+.text2{
+  font-size: 28pt;
+}
+.line2{
+  width: 15rpx;
+  position: absolute;
+  background-color: #000;
+  height: 98rpx;
+  line-height: 98rpx;
+}
+.text3{
+  font-size: 26pt;
+  color: #44C0DE;
+}
+.text4{
+  font-size: 32pt;
+}
+.text5{
+  font-size: 22pt;
 }
 
 .bottom-btn{
   position: absolute;
   width: 100%;
-  text-align: center;
   bottom: 20rpx;
 }
 .bottom-btn button{
   width: 40%;
-  background-color: transparent;
+  font-size: 11pt;
   font-weight: 700;
+  background-color: transparent;
   border: 1px solid #000;
-  animation: 2s fadeInOut infinite;
+  height: 80rpx;
+  line-height: 80rpx;
+
+  animation: pulse 1.5s infinite;
 } 
 
-@keyframes fadeInOut{
-  0%{opacity:0}
-  50%{opacity:.8;}
-  100%{opacity:0;}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }

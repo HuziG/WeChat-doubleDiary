@@ -7,15 +7,14 @@ Component({
     date: String,
     time: String,
     place: String,
-    content: String,
-    showJoin: Boolean
+    content: String
   },
 
   /**
    * 组件的初始数据
    */
   data: {
-    
+    joinApp: false
   },
 
   attached() {

@@ -7,6 +7,7 @@ import {
   PairUserRequest
 } from '../../models/pairuser.js'
 
+const Page = require('../../utils/ald-stat.js').Page;
 const OtherFunReq = new OtherFunRequest()
 const PairUserReq = new PairUserRequest()
 
@@ -58,7 +59,8 @@ Page({
       o['isWriteToday'] = res.data === timeTool.getNowTime() ? true : false
       return PairUserReq.getPairDiary({ page: 1 })
     }).then(res => {
-      o['diaryList'] = res.data.reverse()
+      let _res = res.data.reverse()
+      o['diaryList'] = _res
       this.setData({ ...o })
     })
   },
